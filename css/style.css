@@ -69,7 +69,7 @@ hr {
   overflow: visible; }
 
 h1, h2, h3, h4, h5, h6, .h3 {
-  font-family: "Brush Script MT", cursive;
+  /* font-family: "Brush Script MT", cursive; */
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -114,6 +114,34 @@ p {
     transform: translateY(0);
   }
 
+
+  /* zoom in function */
+  /* Define the zoomed-in effect */
+
+  .zoom-effects {
+    /* overflow: hidden;
+    position: relative;
+    display: inline-block; */
+    transition: transform 0.30s;
+  }
+  
+  .zoom-effects:hover {
+    transform: scale(1.1); /* You can adjust the scale factor for stronger/weaker zoom */
+    z-index: 1;
+  }
+  
+  .zoom-effect {
+    /* overflow: hidden;
+    position: relative;
+    display: inline-block; */
+    transition: transform 0.3s;
+  }
+  
+  .zoom-effect:hover {
+    transform: scale(0.7); /* Zoom out by scaling down to 0.9 times the original size */
+    z-index: 1;
+  }
+  
 
 abbr[title],
 abbr[data-original-title] {
@@ -8326,9 +8354,75 @@ h1, h2, h3, h4, h5,
   color: #fff;
   line-height: 1.2;
   font-weight: 900; }
+
+  .carousel{
+    display: none;
+  }
+  
+  @media (max-width: 1350px){
+  .main-contents{
+    display: block;
+  }
+  .carousel{
+    display: none;
+  }
+  @media (max-width: 1250px){
+    .main-contents{
+      display: none;
+   
+    }
+    .carousel{
+      display: block;
+    }
+    .k{
+      width: 100%;
+     
+    }
+    
+  }
+  }
   @media (max-width: 991.98px) {
     .slider-text h1 {
       font-size: 40px; } }
+
+
+      
+      .text-carousel {
+        overflow: hidden;
+        height: 170px; /* Adjust the height as needed */
+        position: relative;
+        
+      }
+      
+      .text-slide {
+        position: absolute;
+        /* left: -10; */
+        width: 100%;
+        height: 100%;
+ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: slideUp 10s linear infinite; /* Adjust the animation duration */
+      }
+      
+      @keyframes slideUp {
+        0% {
+          top: 100%; /* Start from bottom */
+        }
+        100% {
+          top: -100%; /* End at the top */
+        }
+      }
+      
+       @media (max-width: 947px){
+        .text-carousel{
+          margin-bottom: 200px;
+         
+        }
+       }
+
+      
 
 .slider-text .subheading {
   font-size: 18px;

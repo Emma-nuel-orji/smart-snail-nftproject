@@ -36,6 +36,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="">
 
+    <style>
+      .items{
+        transition: transform 0.2s;
+      }
+      .items:hover{
+        transform: scale(1.2);
+      }
+    </style>
   </head>
   <body>
 
@@ -61,7 +69,7 @@
 	  <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark ftco_navbar   ftco-navbar-light " id="ftco-navbar">
 	    <div class="container">
         
-	      <a style="color: rgb(228, 215, 215);" class="c navbar-brand c btn btn-danger py-3 px-4" href="http://localhost:3000/">⬅ Back To Main Page </a>
+	      <a style="color: rgb(228, 215, 215); background: purple;" class="c navbar-brand c btn  py-3 px-4" href="http://localhost:3000/">⬅ Back To Main Page </a>
 	      <button style="display: none;" class="navbar-toggler " type="button"  data-toggle="collapse" data-target="#myNav" aria-controls="#myNav" aria-expanded="false" aria-label="Toggle navigation">
               <span  onclick="openNav()"  onclick="closeNav()"    style="font-size:30px;cursor:pointer"  >&#9776; </span>
 	      </button>          
@@ -80,16 +88,28 @@
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap js-fullheight mb-1 " style="background-image: url('imgs/headers/about10.jpg');"  >
+    <div class="hero-wrap js-fullheight mb-1 " style="background-image: url('imgs/headers/about10.jpg');" id="entertainment" >
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
-          <div class="col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-          	<h2 class="c subheading" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">NFT FOR</h2>
-            <h1 class="c mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-            	<span>Entertainment</span>  
+          <div class="text-carousel col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <!-- <div class=""> -->
+              <!-- <div class="text-slide">Slide 1: Text A</div>
+              <div class="text-slide">Slide 2: Text B</div>
+              <div class="text-slide">Slide 3: Text C</div> -->
+            
+            <div class="text-slide">
+              <h2 class="  c subheading" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">NFT FOR</h2>
+            <h1 class="  c mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+            	<span >Entertainment</span>  
             </h1>
+            <h2 class="  c mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+            	<span style="color: white;" >A Metaverse cinema</span>  
+            </h2>
+            </div>
+          	
             <!-- <p><a href="https://discord.gg/hbkPNd4g" class="c btn btn-primary py-3 px-4">JOIN US ON DISCORD</a></p> -->
+          <!-- </div> -->
           </div>
         </div>
       </div>
@@ -98,153 +118,11 @@
     <section   class="ftco-counter  col-md-12" id="section-counter">
     	<div  class="container-fluid">
     		<div class=" row d-flex">
-          <!-- starts here  -->
-    <div style="height: 500px;" class="intro intro-carousel swiper position-relative col-md-6">
-    <div  class="swiper-wrapper  ">
-
-     <!-- <div class="swiper-slide  " style="background-image: url(imgs/headers/gym.webp)">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div  class="">
-                  <h1 href="practice-areas.html"  class="intro-body">
-                    <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word4">NFT TOKEN,</a>
-                    <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word6">FOR LEISURE,</a>
-                    <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word8">METAVERSE</a>
-                    <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word9">AND ENTERTAINMENT</a>
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
       
-      <div class="swiper-slide carousel-item-a intro-item bg-image " style="height: 500px; background-image: url(imgs/headers/gym.webp) ">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="">
-                  <h1  class="intro-body">
-          
-                    <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">NFT TOKEN</a>
-                    <a href="attorneys.html" style="color: rgb(255, 255, 255);  font-size: 115%; opacity:0.5;" class="sentence-word" id="word2">FOR FITNESS</a>
-                    <a href="attorneys.html" style="color: rgb(255, 255, 255);  font-size: 115%; opacity:0.5;" class="sentence-word" id="word3">AND WELLNESS,</a>
-                    
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-slide carousel-item-a intro-item bg-image " style="height: 500px; background-image: url(imgs/headers/palm.jpg)">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="">
-                  <h1  class="intro-body">
-          
-                    <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">NFT TOKEN FOR</a>
-                  <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">LEISURE</a>
-                  <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">RECREATION</a>
-                    
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(imgs/headers/carosel-img.jpg); background-size: cover;">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    
-      <!-- <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(imgs/headers/vision.jpg); background-size: cover;">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                 <h1 class="intro-body">
-                  <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">NFT FOR METAVERSE</a>
-                  <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">AND ENTERTAINMENT</a>
-                 </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(imgs/headers/alex-img.jpg); background-size: cover;">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h1  class="intro-body">
-          
-                  <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">NFT TOKEN FOR</a>
-                  <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">LEISURE</a>
-                  <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">RECREATION</a>
-                    
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-<!-- 
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(imgs/headers/travel.jpg); background-size: cover;">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                  <h1  class="intro-body">
-          
-                  <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">NFT TOKEN FOR</a>
-                  <a href="attorneys.html" style="color: rgb(255, 255, 255); font-size: 115%; opacity:0.5;" class="sentence-word" id="word1">TRAVEL</a>
-                    
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    <!-- </a> -->
-    </div>
-    <!-- <div class="swiper-pagination"></div> -->
-  </div>
       <!-- where to work on now  -->
 			<div class="col-md-6 px-5 py-5">
 				<div class="row justify-content-start pt-3 pb-3">
-          <div class="col-md-12 heading-section ftco-animate">
+          <div style="font-family: 'Sora', sans-serif; color:black;" class="col-md-12 heading-section ftco-animate">
           	<!-- <span class="c subheading">Story</span> -->
             <h2 class="c mb-4">Entertainment</h2>
             Entertain yourself with movies and videos displayed on our cinemas accross all metaverses using smart snail NTF as an access ticket in a watch to earn mechanism. <br> The smart snail cinema is headquartered in TCG world metaverse. <br>The NFT you own determines the package you can subscribe to. <br>Your NFT is staked for the duration of the Tier you own. 
@@ -260,99 +138,1227 @@
 
       <!-- Banner Starts Here -->
  <!-- <section class="ftco-section"> -->
-  <section class="ftco-section bg-light">
+  <section class="main-contents ftco-section bg-light">
     <!-- <div class="container"> -->
     <div class="main-banner header-text">
-      <div class="container-fluid">
+      <div class="container-fluid col-md-11">
         <div class="row justify-content-center mb-1 pb-1">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <!-- <span class="c subheading">Our Blog</span> -->
-            <h2 class="c">PACKAGES</h2>
+            <h2 style="font-family: 'Sora', sans-serif;" class="c">PACKAGES</h2>
           </div>
           </div>
-        <div  class="owl-banner owl-carousel ">
-          <div style="border: 1px solid black; height: 250px;" class="col-md-12  align-self-stretch ftco-animate ">
+        <div style=" margin: 2rem auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; "  class="flexs col-md-12">
+       
+          <a href="" style="border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
            <div class="item">
             <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
             <div class="item-content">
-              <div class="main-content">
-                <div class="meta-category">
+              <div  class="main-content">
+                <div style=" text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category ">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;" >TIER ONE</h3>
                 </div>
-                <h3>TIER ONE</h3>
-                <h4>- 1 month access </h4>
+                
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%;   ">•</span> 1 month access </h6>
+                
               </div>
             </div>
           </div>
-          </div>
-
-          <div style="border: 1px solid black; height: 250px;" class="col-md-12  align-self-stretch ftco-animate ">
+        </a>
+       
+          <a href="" style="border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
            <div class="item">
             <!-- <img src="imgs/Imagen 5.png" alt="" height="250"> -->
             <div class="item-content">
-              <div class="main-content">
-                <div class="meta-category">
+              <div  class="main-content">
+                <div  style=" text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER TWO</h3>
                 </div>
-                <h3>TIER TWO</h3>
-                <h4>- 3 months access</h4>
-                <h4>- stating earning</h4>
+               
+            
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> 3 months access</h6>
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px; "><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> stating earning</h6>
               </div>
             </div>
           </div>
-          </div>
           
-          <div style="border: 1px solid black; height: 250px;" class="col-md-12  align-self-stretch ftco-animate ">
+        </a>
+        
+          <a href="" style="border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
            <div class="item">
             <!-- <img src="imgs/headers/blog.webp" alt="" height="250"> -->
             <div class="item-content">
-              <div class="main-content">
-                <div class="meta-category">
+              <div  class="main-content">
+                <div style=" text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER THREE</h3>
                 </div>
-                <h3>TIER THREE</h3>
-                <h4>- 6 months access</h4>
-                <h4>- watch to earn</h4>
-                <h4>staking earning</h4>
+                
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%;  ">•</span> 6 months access</h6>
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%;  ">•</span> watch to earn</h6>
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;">staking earning</h6>
               </div>
             </div>
           </div>
-          </div>
+        </a>
           
-          <div style="border: 1px solid black; height: 250px;" class="col-md-12  align-self-stretch ftco-animate ">
+          <a href="" style="border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
           <div class="item">
             <!-- <img src="imgs/Imagen 5.png" alt="" height="250"> -->
             <div class="item-content">
-              <div class="main-content">
-                <div class="meta-category">
+              <div  class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);"  class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FOUR</h3>
                 </div>
-                <h3>TIER FOUR</h3>
-                <h4>- 12 months access</h4>
-                <h4>- watch to earn</h4>
-                <h4>staking earning</h4>
+                
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> 12 months access</h6>
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><i style=" height:auto; font-size: 24px; color: #000000; top:0%; " >•</i> watch to earn</h6>
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;">staking earning</h6>
               </div>
             </div>
           </div>
-        </div>
+        </a>
+      
+        <a href="/" style="border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items" >
 
-        <div style="border: 1px solid black; height: 250px;" class="col-md-12  align-self-stretch ftco-animate ">
-          <div class="item">
+         <div class="item">
+            
             <!-- <img src="imgs/headers/gym.webp" alt="" height="250"> -->
             <div class="item-content">
-              <div class="main-content">
-                <div class="meta-category">
+              <div  class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FIVE</h3>
                 </div>
-                <h3>TIER FIVE</h3>
-                <h4>- 12 months access</h4>
-                <h4>- watch to earn</h4>
-                <h4>staking earning</h4>
+                
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> 12 months access</h6>
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> watch to earn</h6>
+                <h6 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"> staking earning</h6>
               </div>
             </div>
+          
           </div>
-        </div>
+        </a>
+        
+  
 
         </div>
        </div>
     </div>
     <!-- </div> -->
   </section>
+  <section class="carousel ftco-section bg-light">
+    <!-- <div class="container"> -->
+    <div class="main-banner header-text">
+      <div class="container-fluid">
+        <div class="row justify-content-center mb-1 pb-1">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <!-- <span class="c subheading">Our Blog</span> -->
+            <h2 style="font-family: 'Sora', sans-serif;" class="c">PACKAGES</h2>
+          </div>
+          </div>
+        <div  class="owl-banner owl-carousel zoom-effects">
+         
+         
+          <a href="fitness.html"  class="col-md-10  align-self-stretch ftco-animate " >
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="k">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER ONE </h3>
+                </div>
+                
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px; "><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> 1 month access </h5>
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+         
+        </a>
+
+
+        <a href="event.html"  class="col-md-12  align-self-stretch ftco-animate " >
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                   <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER TWO </h3>
+                </div>
+               
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> 3 months access</h5>
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> stating earning</h5>
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          
+        </a>
+
+        
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate" >
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER THREE </h3>
+                </div>
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> 6 months access</h5>
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> watch to earn</h5>
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;">staking earning</h5>
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+     
+        </a>
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate" >
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FOUR </h3>
+                </div>
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> 12 months access</h5>
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> watch to earn</h5>
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;">staking earning</h5>
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+         
+        </a>
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate" >
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FIVE </h3>
+                </div>
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> 12 months access</h5>
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;"><span style=" height:auto; font-size: 24px; color: #000000; top:0%; ">•</span> watch to earn</h5>
+                <h5 style="font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:0px;">staking earning</h5>
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        
+        </a>     
+              
+        </div>
+       </div>
+    </div>
+    <!-- </div> -->
+  </section>
+
+
+  
+  <div class="hero-wrap js-fullheight mb-1 " style="background-image: url('imgs/headers/banner/gym.jpg');" id="fitnes" >
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+          <h2 class="c subheading" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">NFT FOR</h2>
+          <h1 class="c mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+            <span>Fitness</span>  
+          </h1>
+          <!-- <p><a href="https://discord.gg/hbkPNd4g" class="c btn btn-primary py-3 px-4">JOIN US ON DISCORD</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <section   class="ftco-counter  col-md-12" id="section-counter">
+    <div  class="container-fluid">
+      <div class=" row d-flex">
+        <!-- starts here  -->
+
+    <!-- where to work on now  -->
+    <div class="col-md-6 px-5 py-5">
+      <div class="row justify-content-start pt-3 pb-3">
+        <div style="font-family: 'Sora', sans-serif; color:black;" class="col-md-12 heading-section ftco-animate">
+          <!-- <span class="c subheading">Story</span> -->
+          <h2 class="c mb-4">Fitness</h2>
+          Choose your plan, The NFT you own determines the plan you can subscribe to. 
+          <br> 
+          Smart Snail NFT gives you access to our online fitness programs, partnered gym facilities. and also our metaverse AR fitness move to earn program.
+          <br>
+          Your NFT is staked for the duration of the plan you choose.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+    <!-- Banner Starts Here -->
+<!-- <section class="ftco-section"> -->
+
+  <section class="main-contents ftco-section bg-light">
+    <!-- <div class="container"> -->
+    <div class="main-banner header-text">
+      <div class="container-fluid col-md-11">
+        <div class="row justify-content-center mb-1 pb-1">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <!-- <span class="c subheading">Our Blog</span> -->
+            <h2 style="font-family: 'Sora', sans-serif;" class="c">PACKAGES</h2>
+          </div>
+          </div>
+        <div style=" margin: 2rem auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; "  class="flexs col-md-12">
+       
+          <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 370px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER ONE</h3>
+                  </div>
+                  <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. 1 month access </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to partnered gym center</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to online programs </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to diet plans </h6>
+
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$50</h4>
+          </a>
+         
+       
+        <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 370px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+          <div class="item">
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER TWO</h3>
+                </div>
+                
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. 3 months access</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to partnered gym center</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to online programs</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to diet plans</h6>
+              </div>
+            </div>
+          </div>
+          <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$100</h4>
+        </a>
+
+        <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 370px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+          <div class="item">
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER THREE</h3>
+                </div>
+                
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. 6 months access</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to partnered gym center</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to online programs</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to diet plans</h6>
+              </div>
+            </div>
+          </div>
+          <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$150</h4>
+        </a>
+
+       <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 370px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+          <div class="item">
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FOUR</h3>
+                </div>
+                
+               <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. 12 months access</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to partnered gym facilities</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to online instructors </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to diet plans </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to AR fitness move to earn program</h6>
+            
+              </div>
+            </div>
+          </div>
+          <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$200</h4>
+        </a>
+
+          <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 370px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+          <div class="item">
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FIVE</h3>
+                </div>
+                
+               <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. 24 months access</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to partnered gym facilities</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to online instructors </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to diet plans </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to AR fitness move to earn program</h6>
+            
+              </div>
+            </div>
+          </div>
+          <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$250</h4>
+        </a>
+        
+       
+        
+  
+
+        </div>
+       </div>
+    </div>
+    <!-- </div> -->
+  </section>
+  <section class="carousel ftco-section bg-light" >
+    <!-- <div class="container"> -->
+    <div class="main-banner header-text">
+      <div class="container-fluid">
+        <div class="row justify-content-center mb-1 pb-1">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <!-- <span class="c subheading">Our Blog</span> -->
+            <h2 class="c" style="font-family: 'Sora', sans-serif;">PACKAGES</h2>
+          </div>
+          </div>
+        <div  class="owl-banner owl-carousel zoom-effect">
+          <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER ONE </h3>
+                </div>
+                
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px;  ">. 1 month access </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px;  ">. Access to partnered gym center</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px;  ">. Access to online programs </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px;  ">. Access to diet plans </h6>
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$50</h4>
+        </a>
+
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                   <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER TWO </h3>
+                </div>
+               
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. 3 months access</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to partnered gym center</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to online programs </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to diet plans </h6>
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$100</h4>
+        </a>
+
+        
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER THREE </h3>
+                </div>
+                
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. 6 months access</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to partnered gym facilities</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to online instructors </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to diet plans </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to AR fitness move to earn program</h6>
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$150</h4>
+        </a>
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FOUR </h3>
+                </div>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. 12 months access</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to partnered gym facilities</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to online instructors </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to diet plans </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to AR fitness move to earn program</h6>
+            
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$200</h4>
+        </a>
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FIVE </h3>
+                </div>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. 24 months access</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to partnered gym facilities</h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to online instructors </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to diet plans </h6>
+                <h6 style=" font-family: 'Sora', sans-serif; padding-left: 5px; color:black; padding-top:5px; ">. Access to AR fitness move to earn program</h6>
+            
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$250</h4>
+        </a>     
+              
+        </div>
+       </div>
+    </div>
+    <!-- </div> -->
+  </section>
+
+<!-- </section> -->
+  <!-- Banner Ends Here -->
+  
+  
+ 
+    <section class="ftco-section-parallax bg-secondary">
+      <div class="parallax-img d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+              <h2>Search for gym centers around you that accept Smart Snail NFT.</h2>
+      
+              <div class="row d-flex justify-content-center mt-4 mb-4">
+                <div class="col-md-8">
+                  <form action="#" class="subscribe-form">
+                    <div class="form-group d-flex">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <input type="submit" value="Search" class="submit px-3">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="ftco-section-parallax bg-dark">
+      <div class="parallax-img d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-7  heading-section heading-section-white ftco-animate">
+              <p>We are secking to pertner with fitness instructors and gym facilities, Kindly Register here if interested</p>
+      
+              <div  class="row d-flex  mt-4 mb-4">
+                <div class="col-md-8">
+                  <p><a href="http://bit.ly/3JUNAFz" class="c btn btn-primary py-3 px-4 ">Register Here </a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    
+    <div class="hero-wrap js-fullheight mb-1 " style="background-image: url('imgs/headers/banner/leisure4.jpg');" id="tour" >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+          	<h2 class="c subheading" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">NFT FOR</h2>
+            <h1 class="c mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+            	<span>Leisure and Tour</span>  
+            </h1>
+            <!-- <p><a href="https://discord.gg/hbkPNd4g" class="c btn btn-primary py-3 px-4">JOIN US ON DISCORD</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+   	
+    <section   class="ftco-counter  col-md-12" id="section-counter">
+    	<div  class="container-fluid">
+    		<div class=" row d-flex">
+          <!-- starts here  -->
+ 
+      <!-- where to work on now  -->
+			<div class="col-md-6 px-5 py-5">
+				<div class="row justify-content-start pt-3 pb-3">
+          <div style="font-family: 'Sora', sans-serif; color:black;" class="col-md-12 heading-section ftco-animate">
+          	<!-- <span class="c subheading">Story</span> -->
+            <h2 class="c mb-4">Leisure and Tour</h2>
+            The NFT you own determines the package you can subscribe to. 
+            <br> 
+            Smart Snail NFT gives you access to tour and leisure experiences either with Smart Snail tour or our partrored tour groups.
+            <br>
+            Your NFT is staked for the duration of the tier you own.
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+</section>
+
+
+    <!-- Banner Starts Here -->
+<!-- <section class="ftco-section"> -->
+
+  <section class="main-contents ftco-section bg-light">
+    <!-- <div class="container"> -->
+    <div class="main-banner header-text">
+      <div class="container-fluid col-md-11">
+        <div class="row justify-content-center mb-1 pb-1">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <!-- <span class="c subheading">Our Blog</span> -->
+            <h2 style="font-family: 'Sora', sans-serif;" class="c">PACKAGES</h2>
+          </div>
+          </div>
+        <div style=" margin: 2rem auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; "  class="flexs col-md-12">
+       
+          <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER ONE</h3>
+                  </div>
+                  
+              
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$5 - $50</h4>
+          </a>
+
+        <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER TWO</h3>
+                  </div>
+                  
+              
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">&55 - $100</h4>
+          </a>
+      
+        <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER THREE</h3>
+                  </div>
+                  
+              
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$115 - $200</h4>
+          </a>
+
+
+          <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FOUR</h3>
+                  </div>
+                  
+              
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$210 - $300</h4>
+          </a>
+
+          <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FIVE</h3>
+                  </div>
+                  
+              
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$310 - $500</h4>
+          </a>
+      
+      
+        
+  
+
+        </div>
+       </div>
+    </div>
+    <!-- </div> -->
+  </section>
+  <section class="carousel ftco-section bg-light">
+    <!-- <div class="container"> -->
+    <div class="main-banner header-text">
+      <div class="container-fluid">
+        <div class="row justify-content-center mb-1 pb-1">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <!-- <span class="c subheading">Our Blog</span> -->
+            <h2 style="font-family: 'Sora', sans-serif;" class="c">PACKAGES</h2>
+          </div>
+          </div>
+        <div  class="owl-banner owl-carousel ">
+          <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER ONE </h3>
+                </div>
+                
+                <!-- <h5 style="padding-left: 5px; ">. 1 month access </h5> -->
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$5 - $50</h4>
+        </a>
+
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                   <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER TWO </h3>
+                </div>
+               
+                <!-- <h5 style="padding-left: 5px;">. 3 months access</h5>
+                <h5 style="padding-left: 5px;">. stating earning</h5> -->
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$55 - $100</h4>
+        </a>
+
+        
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER THREE </h3>
+                </div>
+                <!-- <h5 style="padding-left: 5px;">. 6 months access</h5>
+                <h5 style="padding-left: 5px;">. watch to earn</h5>
+                <h5 style="padding-left: 5px;">staking earning</h5> -->
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$115 - $200</h4>
+        </a>
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FOUR </h3>
+                </div>
+                <!-- <h5 style="padding-left: 5px;">. 12 months access</h5>
+                <h5 style="padding-left: 5px;">. watch to earn</h5>
+                <h5 style="padding-left: 5px;">staking earning</h5> -->
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$210 - $300</h4>
+        </a>
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FIVE </h3>
+                </div>
+                <!-- <h5 style="padding-left: 5px;">. 12 months access</h5>
+                <h5 style="padding-left: 5px;">. watch to earn</h5>
+                <h5 style="padding-left: 5px;">staking earning</h5> -->
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$310 - $500</h4>
+        </a>     
+              
+        </div>
+       </div>
+    </div>
+    <!-- </div> -->
+  </section>
+
+      <!-- <section class="ftco-section-parallax bg-secondary">
+        <div class="parallax-img d-flex align-items-center">
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                <h2>Search for business around you that that accept Smart Snail NFT.</h2>
+        
+                <div class="row d-flex justify-content-center mt-4 mb-4">
+                  <div class="col-md-8">
+                    <form action="#" class="subscribe-form">
+                      <div class="form-group d-flex">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="submit" value="Search" class="submit px-3">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <section class="ftco-section-parallax bg-dark">
+        <div class="parallax-img d-flex align-items-center">
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-7  heading-section heading-section-white ftco-animate">
+                <p>We are secking to pertner with leisure and tour groups
+					<br>
+					If you are interested Kindly register here
+				</p>
+        
+                <div  class="row d-flex  mt-4 mb-4">
+                  <div class="col-md-8">
+                    <p><a href="http://bit.ly/3JUNAFz" class="c btn btn-primary py-3 px-4 ">Register Here </a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      
+      <div class="hero-wrap js-fullheight mb-1 " style="background-image: url('imgs/headers/banner/hospitality2.jpg');" id="hospitality" >
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+            <div class="col-md-10 text-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+              <h2 class="c subheading" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">NFT FOR</h2>
+              <h1 class="c mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                <span>Hospitality</span>  
+              </h1>
+              <!-- <p><a href="https://discord.gg/hbkPNd4g" class="c btn btn-primary py-3 px-4">JOIN US ON DISCORD</a></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <section   class="ftco-counter  col-md-12" id="section-counter">
+        <div  class="container-fluid">
+          <div class=" row d-flex">
+            <!-- starts here  -->
+
+        <!-- where to work on now  -->
+        <div class="col-md-6 px-5 py-5">
+          <div class="row justify-content-start pt-3 pb-3">
+            <div style="font-family: 'Sora', sans-serif; color:black;" class="col-md-12 heading-section ftco-animate">
+              <!-- <span class="c subheading">Story</span> -->
+              <h2 class="c mb-4">Hospitality</h2>
+              The NFT you own determines the package you can subscribe to. 
+              <br> 
+              Smart Snail NFT gives you access to Hotel stays and shortlet apartment rent.
+              <br>
+              Your NFT is staked for the duration of the plan you own.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+        <!-- Banner Starts Here -->
+   <!-- <section class="ftco-section"> -->
+
+        <!-- Banner Starts Here -->
+<!-- <section class="ftco-section"> -->
+
+  <section class="main-contents ftco-section bg-light">
+    <!-- <div class="container"> -->
+    <div class="main-banner header-text">
+      <div class="container-fluid col-md-11">
+        <div class="row justify-content-center mb-1 pb-1">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <!-- <span class="c subheading">Our Blog</span> -->
+            <h2 style="font-family: 'Sora', sans-serif;" class="c">PACKAGES</h2>
+          </div>
+          </div>
+        <div style=" margin: 2rem auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; "  class="flexs col-md-12">
+       
+          <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER ONE PACKAGE</h3>
+                  </div>
+                  
+              
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$5 - $50</h4>
+          </a>
+
+          <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER TWO PACKAGE</h3>
+                  </div>
+                  
+              
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$55 - $100</h4>
+          </a>
+       
+          <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER THREE PACKAGE</h3>
+                  </div>
+                  
+              
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$115 - $200</h4>
+          </a>
+        
+          <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FOUR PACKAGE</h3>
+                  </div>
+                  
+              
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$210 - $300</h4>
+          </a>
+          
+          <a href="" style="position: relative; border: 1px solid rgb(186, 182, 182); border-radius: 20px; width: 18%; height: 250px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="items">
+            <div class="item">
+              <div class="item-content">
+                <div class="main-content">
+                  <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                    <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FIVE PACKAGE</h3>
+                  </div>
+                  
+              
+                </div>
+              </div>
+            </div>
+            <h4 style="position: absolute; bottom: 0; width: 100%;text-align: center; text-decoration: line-through;  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border: 1px solid rgb(114, 114, 114);">$310 - $1500</h4>
+          </a>
+      
+        </div>
+       </div>
+    </div>
+    <!-- </div> -->
+  </section>
+  <section class="carousel ftco-section bg-light">
+    <!-- <div class="container"> -->
+    <div class="main-banner header-text">
+      <div class="container-fluid">
+        <div class="row justify-content-center mb-1 pb-1">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <!-- <span class="c subheading">Our Blog</span> -->
+            <h2 style="font-family: 'Sora', sans-serif;" class="c">PACKAGES</h2>
+          </div>
+          </div>
+        <div  class="owl-banner owl-carousel ">
+          <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                  <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER ONE PACKAGE</h3>
+                </div>
+                
+                <!-- <h5 style="padding-left: 5px; ">. 1 month access </h5> -->
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$5 - $50</h4>
+        </a>
+
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                   <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER TWO PACKAGE</h3>
+                </div>
+               
+                <!-- <h5 style="padding-left: 5px;">. 3 months access</h5>
+                <h5 style="padding-left: 5px;">. stating earning</h5> -->
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$55 - $100</h4>
+        </a>
+
+        
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER THREE PACKAGE</h3>
+                </div>
+                <!-- <h5 style="padding-left: 5px;">. 6 months access</h5>
+                <h5 style="padding-left: 5px;">. watch to earn</h5>
+                <h5 style="padding-left: 5px;">staking earning</h5> -->
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$115 - $200</h4>
+        </a>
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FOUR PACKAGE</h3>
+                </div>
+                <!-- <h5 style="padding-left: 5px;">. 12 months access</h5>
+                <h5 style="padding-left: 5px;">. watch to earn</h5>
+                <h5 style="padding-left: 5px;">staking earning</h5> -->
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$210 - $300</h4>
+        </a>
+
+        <a href=""  class="col-md-12  align-self-stretch ftco-animate ">
+          <div style="border: 1px solid rgb(186, 182, 182); border-radius: 20px;  height: 260px; background: rgb(229, 229, 229); box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+           <div class="item">
+            <!-- <img src="imgs/headers/blog.webp" alt=""  height="250"> -->
+            <div class="item-content">
+              <div class="main-content">
+                <div style="text-align: center; border-bottom: 1px solid rgb(91, 88, 88);" class="meta-category">
+                <h3 style="font-family: 'Sora', sans-serif; color: purple;">TIER FIVE PACKAGE</h3>
+                </div>
+                <!-- <h5 style="padding-left: 5px;">. 12 months access</h5>
+                <h5 style="padding-left: 5px;">. watch to earn</h5>
+                <h5 style="padding-left: 5px;">staking earning</h5> -->
+            
+                
+              </div>
+            </div>
+          </div>
+          
+          </div>
+          <h4 style="border: 1px solid black; text-align:center; text-decoration: line-through;">$310 - $1500</h4>
+        </a>     
+              
+        </div>
+       </div>
+    </div>
+    <!-- </div> -->
+  </section>
+
+   
+      
+      
+     
+        <section class="ftco-section-parallax bg-secondary">
+          <div class="parallax-img d-flex align-items-center">
+            <div class="container">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                  <h2>Search for business around you that that accept Smart Snail NFT.</h2>
+          
+                  <div class="row d-flex justify-content-center mt-4 mb-4">
+                    <div class="col-md-8">
+                      <form action="#" class="subscribe-form">
+                        <div class="form-group d-flex">
+                          <input type="text" class="form-control" placeholder="Search">
+                          <input type="submit" value="Search" class="submit px-3">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <section class="ftco-section-parallax bg-dark">
+          <div class="parallax-img d-flex align-items-center">
+            <div class="container">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-7  heading-section heading-section-white ftco-animate">
+                  <p>We are secking to pertner with a Hospitality provider or shortlet apartment owners. 
+            <br>
+            If you are interested Kindly register here
+          </p>
+          
+                  <div  class="row d-flex  mt-4 mb-4">
+                    <div class="col-md-8">
+                      <p><a href="http://bit.ly/3JUNAFz" class="c btn btn-primary py-3 px-4 ">Register Here </a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+
+
+
+
+
+
   <!-- </section> -->
     <!-- Banner Ends Here -->
     <p style="padding-top: 15px; padding-left:10px;"><a href="http://bit.ly/3JUNAFz" class="c btn btn-primary py-3 px-4 ">Downlaod App </a></p>
@@ -438,6 +1444,8 @@
     }
     </script>
 
+   
+
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -496,5 +1504,26 @@
          }
      }
    </script>
+      <script>
+        // Function to auto-slide the text carousel
+function autoSlide() {
+  const slides = document.querySelectorAll('.text-slide');
+  let currentSlide = 0;
+
+  function showSlide() {
+    slides.forEach((slide) => {
+      slide.style.display = 'none';
+    });
+    slides[currentSlide].style.display = 'block';
+    currentSlide = (currentSlide + 1) % slides.length;
+  }
+
+  showSlide();
+  setInterval(showSlide, 5000); // Change slide every 5 seconds (adjust as needed)
+}
+
+document.addEventListener('DOMContentLoaded', autoSlide);
+
+      </script>
   </body>
 </html>
