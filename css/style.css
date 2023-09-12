@@ -142,7 +142,70 @@ p {
     z-index: 1;
   }
   
+  ::placeholder{
+    color: deeppink;
+    /* border: 1px solid red; */
+    
+  }
 
+  .play-store-button {
+    /* Specify the width you want, for example: */
+    width: 190px; /* Adjust the width as needed */
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000000;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .play-store-button:hover {
+    background-color: #393a3a;
+  }
+  
+  .button-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .play-store-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: transparent;
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .get-it-on {
+    font-size: 12px;
+  }
+  
+  .google-play {
+    top: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  
+  .play {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    /* height: 30vh; */
+  }
+  
+  
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -8422,8 +8485,160 @@ h1, h2, h3, h4, h5,
         }
        }
 
+      /* playstore popsout style */
       
+      /* Styles for the pop-up container */
+.popup { padding-top: 180px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background to blur the rest */
+  z-index: 1;
+  overflow: auto;
+}
 
+.popup-content {
+ 
+
+  background-color: white;
+  width: 50%;
+  max-width: 400px; /* Adjust as needed */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styles for the Play Store icon */
+.play-store-icon {
+  display: block;
+  margin: 20px auto;
+  max-width: 100px;
+}
+
+/* Styles for the email form and button */
+.center {
+  text-align: center;
+}
+
+#emailInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+ 
+}
+
+.notify-button {
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .popup-content {
+    width: 100%; /* Set width to 100% for smaller screens */
+    max-width: none; /* Remove max-width for smaller screens */
+  }
+}
+
+/* ends here */
+
+   /* applestore popsout style */
+      
+      /* Styles for the pop-up container */
+.popups { padding-top: 180px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background to blur the rest */
+  z-index: 1;
+  overflow: auto;
+}
+
+.popup-contents {
+ 
+
+  background-color: white;
+  width: 50%;
+  max-width: 400px; /* Adjust as needed */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the close button */
+.close-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styles for the Play Store icon */
+.play-store-icons {
+  display: block;
+  margin: 20px auto;
+  max-width: 100px;
+}
+
+/* Styles for the email form and button */
+.centers {
+  text-align: center;
+}
+
+#emailInputs {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.notify-buttons {
+  width: 100%;
+  border-radius: 35px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .popup-contents {
+    width: 100%; /* Set width to 100% for smaller screens */
+    max-width: none; /* Remove max-width for smaller screens */
+  }
+}
+
+/* ends here */
 .slider-text .subheading {
   font-size: 18px;
   font-style: italic;
